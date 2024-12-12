@@ -1,4 +1,5 @@
 require './lib/hobbit'
+require 'pry'
 
 RSpec.describe Hobbit do
   it "has a name" do
@@ -37,7 +38,7 @@ RSpec.describe Hobbit do
     expect(hobbit.age).to eq(5)
   end
 
-  it "is considered a child at 32" do
+ it "is considered a child at 32" do
     hobbit = Hobbit.new('Gerontius')
 
     32.times do

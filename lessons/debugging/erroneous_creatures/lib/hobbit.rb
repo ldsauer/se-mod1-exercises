@@ -15,7 +15,8 @@ class Hobbit
   end
 
   def adult?
-    @agee >= 32
+    binding.pry
+    @age => 32
   end
 
   def play

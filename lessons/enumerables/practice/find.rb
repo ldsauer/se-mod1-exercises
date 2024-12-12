@@ -17,6 +17,7 @@ def no_waldo
     found = words.find do |word|
 
       # Your code goes here
+      word == "waldo"
 
     end
 
@@ -88,7 +89,7 @@ def find_first_number_greater_than_20
 end
 
 # p find_first_seven_letter_word
-# p no_waldo
+p no_waldo
 # p find_waldo
 # p cannot_find_3_letter_words
 # p find_13

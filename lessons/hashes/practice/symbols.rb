@@ -14,7 +14,20 @@ new_tv = {
 # Lets change the hash above to use symbols instead of strings.
 # Syntax symbol with hash rocket:
 # create hash here
-
+# new_tv_sym1 = { 
+#   :screen_size => 50, 
+#   :price => 300, 
+#   :brand => "Samsung" 
+# }
 
 # Syntax symbol without hash rocket:
 # create hash here
+
+new_tv_sym2 = {
+  screen_size: 50, 
+  price: 300, 
+  brand: "Samsung"
+}
+
+p new_tv_sym2
+p new_tv_sym2[:screen_size]

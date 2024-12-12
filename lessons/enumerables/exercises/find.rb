@@ -5,7 +5,7 @@ def find_first_long_named_sister
     sisters = ["Rose", "Kathleen", "Eunice", "Patricia", "Jean"]
   
     ### YOUR CODE HERE
-
+sisters.find {|name| name.length > 4}
     # should return "Kathleen"
 end
 
