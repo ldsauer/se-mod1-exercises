@@ -1,3 +1,5 @@
+require "pry"
+
 cities_lived_in = {
     michaela: ["Philadelphia", "Fort Collins", "Seattle"],
     mike: ["Denver", "Santa Fe", "Philadelphia", "Portland"],
@@ -9,7 +11,17 @@ cities_lived_in = {
 # Problem #1: 
 # Get a unique list of all of the cities that these humans have lived in  
 # ["Philadelphia", "Fort Collins", "Seattle", "Denver", "Santa Fe", "Portland", "Lansing", "Columbus", "Austin"]
+# city_list = []
 
+# cities_lived_in.each do |person, cities|
+#     cities.each do |city|
+#         if !city_list.include?(city)
+#             city_list << city
+#         end
+#     end
+# end
+
+# p city_list
 
 
 
@@ -20,6 +32,18 @@ cities_lived_in = {
 # [:michaela, :mike, :alex]
 # or
 # ["Michaela", "Mike", "Alex"]
+
+# lived_in_philly = []
+
+# cities_lived_in.each do |person, cities|
+#     cities.each do |city|
+#         if city.include?("Philadelphia")
+#             lived_in_philly << person
+#         end
+#     end
+# end
+ 
+# p lived_in_philly
 
 
 
@@ -38,3 +62,18 @@ cities_lived_in = {
 #     "Columbus => 1,
 #     "Austin" => 1
 # }
+
+population = {}
+
+cities_lived_in.each do |person, cities|
+    cities.each do |city|
+        # create the key "city" with a starting value
+        if population[city].nil? 
+            population[city] = 0
+        end
+        # increaase the value of the key "city"
+        population[city] += 1
+    end
+end
+
+p population
