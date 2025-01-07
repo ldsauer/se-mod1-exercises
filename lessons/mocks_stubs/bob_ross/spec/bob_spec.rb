@@ -31,9 +31,12 @@ RSpec.describe Bob do
 
     it 'can return paint colors' do
       bob = Bob.new
-      paint_1 = Paint.new("Alizarin Crimson")
-      paint_2 = Paint.new("Van Dyke Brown")
+      paint_1 = Paint.new("Red")
+      paint_2 = Paint.new("brown")
   
+      allow(paint_1).to receive(:color).and_return("Alizarin Crimson")
+      allow(paint_2).to receive(:color).and_return("Van Dyke Brown")
+      
       bob.add_paint(paint_1)
       bob.add_paint(paint_2)
     
