@@ -33,7 +33,7 @@ pry(main)> require './lib/artist'
 pry(main)> attributes = {
   id: "1",
   name: "Rue Mouffetard, Paris (Boy with Bottles)",
-  artist_id: "4",
+  artist_id: "1",
   year: "1954"
 }      
 
