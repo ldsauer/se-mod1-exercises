@@ -12,7 +12,7 @@ class Dog
   end
 
   def self.bark
-    #binding.pry ## Can we access @name from this class method? What will output next?
+    binding.pry ## Can we access @name from this class method? What will output next?
     puts "#{@name} says, 'bark'."
   end
 
