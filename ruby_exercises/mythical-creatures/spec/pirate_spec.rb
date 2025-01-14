@@ -37,12 +37,12 @@ RSpec.describe Pirate do
     expect(pirate.cursed?).to be true
   end
 
-  it 'has a booty' do
+  xit 'has a booty' do
     # create a pirate
     # check that the pirate starts with 0 booty
   end
 
-  it 'gets 100 booty for robbing a ship' do
+  xit 'gets 100 booty for robbing a ship' do
     # create a pirate
     # rob some ships
     # check that the pirate got 100 booty for each ship it robbed
